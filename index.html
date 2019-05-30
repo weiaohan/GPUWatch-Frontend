@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
+    <title>GPU监控平台</title>
+  </head>
+  <body>
+    <div id=topbar>
+        <h1 id=title>GPU监控平台</h1>
+    </div>
+    <div id=driver>
+      <span>驱动信息</span><span></span>
+    </div>
+    <div>
+    <table class="table table-bordered" id="table1">
+      <tr>
+        <th>GPU index</th>
+        <th>Total</th>
+        <th>Usage</th>
+        <th>Free</th>
+        <th>使用率</th>
+        <th>action</th>
+      </tr>
+    </table>
+    </div>
+    <div id="process">GPU进程占用信息</div>
+    <div>
+      <table class="table table-bordered" id="table2">
+        <tr>
+          <th>进程编号</th>
+          <th>pid</th>
+          <th>进程名</th>
+          <th>user</th>
+          <th>usage</th>
+        </tr>
+      </table>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
