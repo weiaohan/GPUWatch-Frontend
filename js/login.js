@@ -14,8 +14,9 @@ $(document).ready(function() {
                 } else if (result == -2) {
                     alert("密码错误！")
                 } else {
+                    console.log(result)
                     var name = result.name
-                    window.location.href = "http://211.83.111.222?name=" + name
+                    // window.location.href = "http://211.83.111.222?name=" + name
                 }
             }
         })
