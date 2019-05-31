@@ -1,12 +1,10 @@
 $(document).ready(function(){
-    console.log("hello")
     $.ajax({
         url: "http://211.83.111.222/api/gpuinfo",
         type: "GET",
         dataType: "json",
         success: function(data) {
             var gpu = JSON.parse(data)
-            console.log(gpu)
             $("#driver span:nth-child(2)").text(gpu.driverInfo)
             var rate0 = gpu.GPU0.usage/gpu.GPU0.total
             rate0 = rate0.toFixed(2)
@@ -38,7 +36,6 @@ $(document).ready(function(){
         url: "http://211.83.111.222/api/gpuprocess",
         type: "GET",
         success: function(result) {
-            console.log(result)
             for (i  = 0 ; i < result.length; i++) {
                 $("#table2").append(
                     '<tr> \
