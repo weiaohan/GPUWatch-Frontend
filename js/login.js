@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#login").submit(function() {
         var data = {}
         data.email = $("#inputEmail").val()
-        data.pwd = $("inputPassword").val()
+        data.pwd = $("#inputPassword").val()
         console.log(data)
         $.ajax({
             url: "http://211.83.111.222/api/login",
